@@ -12,7 +12,8 @@
 autoPlay.test()
 autoPlay.allowed()
 autoPlay.withSound
-autoPlay.withOutSound```
+autoPlay.withOutSound
+```
 
 ## Caveat Emptor
 

@@ -5,8 +5,8 @@ class AutoPlay {
     this.audioFile = audioFile;
   }
 
-  test(audioFile){
-    const audio =  new Audio(audioFile);
+  test(){
+    const audio =  new Audio(this.audioFile);
     this.p1 = audio.play().then( () => this.withSound=true)
       .catch( ()=>{
         audio.muted=true;
@@ -21,6 +21,8 @@ class AutoPlay {
     return this.allowed()
   }
 
-  allowed(){return this.withSound || this.withOutSound}
+  allowed(){
+    return this.withSound || this.withOutSound
+  }
 
 }
